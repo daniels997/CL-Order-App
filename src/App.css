@@ -1,0 +1,1134 @@
+.App {
+  text-align: center;
+  flex-direction: column;
+  display: flex;
+  background-color: white;
+}
+
+
+/*welcome related */
+.welcome-page {
+  margin-top: 10vmin;
+}
+
+.grayout {
+  background-color: rgb(242, 242, 242);
+  padding: 5px;
+}
+
+.cool-button-container {
+  display: flex;
+  gap: 10px; /* Adjust the gap as needed */
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.mobile-cool-button-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-right: 20px;
+}
+
+.cool-button {
+  margin: 10px;
+  background-color: #007BFF;
+  color: #FFFFFF;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.instructions {
+  margin-left: 17px;
+  text-align: left;
+}
+
+.row-display {
+  display: flex;           
+  overflow-x: auto;          
+  padding: 10px;
+}
+
+.text-margin {
+  margin: 17px;
+}
+
+.image-margin {
+  margin: 10px;
+}
+
+.vertical-divider {
+  display: inline-block;
+  width: 80px; /* Adjust the width to your preference */
+  background-color: white; /* Change the background color as needed */
+  height: 1em; /* This height won't push the last image down */
+}
+
+.mobile-text {
+  font-size: 14px;
+}
+
+.info-header {
+  color: red;
+  font-size: 32px;
+}
+
+.mobile-header {
+  color: red;
+  font-size: 26px;
+}
+
+.mobile-header-black {
+  font-size: 18px;
+}
+
+
+.footer {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 80px;
+}
+
+.mobile-footer {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 80px;
+}
+
+
+
+/*Payment related*/
+.payment-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns, adjust as needed */
+  grid-gap: 20px; /* Adjust the gap between grid items */
+}
+
+.mobile-payment-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* Two columns, adjust as needed */
+  grid-gap: 0px; /* Adjust the gap between grid items */
+}
+
+.payment-item {
+  margin: 10px;
+  border: 1px solid #ccc; /* Add borders to grid items for separation */
+  padding: 20px;
+  padding-top: 0px;
+}
+/*Payment End*/
+
+
+/*Contact related*/
+.contact-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns, adjust as needed */
+  grid-gap: 0px; /* Adjust the gap between grid items */
+}
+.mobile-contact-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* Two columns, adjust as needed */
+  grid-gap: 0px; /* Adjust the gap between grid items */
+  text-align: left;
+}
+
+.mobile-contact-text {
+  margin-left: 17px;
+}
+
+.contact-names {
+  font-weight: bold;
+}
+
+.contact-names-mobile {
+  font-weight: bold;
+  margin-left: 16px;
+  margin-bottom: -10px;
+  margin-top: 0px;
+}
+
+/*Shipping related*/
+.mobile-image {
+  max-width: 100%;
+}
+
+.hi-mobile-image {
+  max-width: 39%;
+  height: auto;
+}
+
+
+
+.App-header {
+  border-style: outset;
+  position: fixed;
+  top: 0;
+  width: 100%; /* Span the entire width */
+  background-color: #b8c7e6;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: calc(10px + 2vmin);
+  padding: 10px;
+  z-index: 1000;
+  left: 0; /* Align to the left edge of the viewport */
+  right: 0; /* Align to the right edge of the viewport */
+  margin: 0; /* Remove any margin */
+  box-sizing: border-box; /* Include padding and border in the element's total width */
+}
+
+.hamburger-button {
+  background-color: #333;
+  width: 60px;
+  height: 60px;
+  border-radius: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.hamburger-icon {
+  color: white;
+  font-size: 36px;
+}
+
+.category-list {
+  max-height: 70vmin;
+  overflow-y: auto;
+  position: absolute;
+  top: 75px;
+  left: 10px;
+  width: max-content; /* Set the width to adjust to the content */
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.category-list ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.category-list li {
+  text-align: left;
+  color: #333;
+  font-size: 16px;
+  padding: 18px 0;
+  cursor: pointer;
+  border-bottom: 1px solid #ccc; 
+}
+
+/* Style the last child to remove the bottom border */
+.category-list li:last-child {
+  border-bottom: none;
+}
+
+.category-list li:hover {
+  background-color: rgba(211, 211, 211, 0.603); 
+}
+
+.category-list li.active-category {
+  background-color: lightblue;
+  font-weight: bold;
+}
+
+.search-button {
+  margin-left: 20px;
+  background-color: #333;
+  width: 40px;
+  height: 40px;
+  border-radius: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.search-icon {
+  color: white;
+  font-size: 24px;
+}
+
+.search-bar-pos{
+  position: absolute;
+  top: 66px;
+  left: 90px;
+}
+
+.search-bar {
+  display: inline-flex;
+  max-height: 70vmin;
+  background-color: lightgray;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  padding: 3px;
+}
+
+.submit-search {
+  margin-top: 5.5px;
+  background-color: #333;
+  width: 30px;
+  height: 30px;
+  border-radius: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.submit-search-icon {
+  color: white;
+  font-size: 18px;
+}
+
+.logo-container {
+  flex: 1; /* Allow the logo container to grow and take available space */
+  text-align: center; /* Center the logo horizontally */
+  margin-right: 30px;
+}
+
+.App-logo {
+  padding: 6px;
+  height: 5vmin;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.small-logo {
+  padding: 2px;
+  display: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.total-price {
+  font-weight: bold;
+  position: absolute;
+  top: 5px;
+  right: 175px;
+  font-size: 20px;
+  color: black;
+}
+
+.reset-button {
+  padding: 5px;
+  position: absolute;
+  top: 35px;
+  right: 170px;
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+  margin: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.reset-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+  z-index: 1000; /* Adjust the z-index as needed */
+}
+
+.modal-button-reset {
+  padding: 5px;
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+  margin: 15px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.modal-button-cancel {
+  padding: 10px;
+  background-color: '#2953a5';
+  color: black;
+  border-radius: 5px;
+  margin: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.cart-button {
+  vertical-align: auto;
+  padding: 8px 16px;
+  background-color: #2953a5;
+  border-radius: 5px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  margin-right: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+}
+
+.cart-modal {
+  padding: 10px;
+  width: 90vmin;
+  height: 95vmin;
+  max-height: 95vmin;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+  z-index: 1000; /* Adjust the z-index as needed */
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-search-bar-pos{
+  position: absolute;
+  top: 60px;
+  left: 30px;
+}
+
+.cart-title {
+  font-size: 26px;
+  font-weight: bold;
+  margin-top: -3px;
+  position: absolute;
+  top: 10px;
+  left: 350px;
+}
+
+.cart-instructions {
+  font-size: 22px;
+  color: red;
+  margin-top: -5px;
+  position: absolute;
+  top: 40px;
+  left: 250px;
+}
+
+.mobile-cart-title {
+  display: none;
+}
+
+.mobile-cart-instructions {
+  display: none;
+}
+
+.cart-total-price {
+  position: absolute;
+  right: 50px;
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+}
+
+.cart-list {
+  min-height: 86vmin;
+  flex: 1;
+  overflow-y: auto;
+  display: list-item; /* Use a grid layout for the items */
+  gap: 10px;
+  padding: 10 10px; /* Add some padding to the list */
+  margin-top: 25px;
+  margin-bottom: -10px;
+}
+
+.cart-item {
+  max-width: 100vmin;
+  background-color: #2953a54f;
+  padding: 12px;
+  border-radius: 10px;
+  font-family: "Courier";
+  margin: 5px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+  overflow-anchor: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cart-item > div {
+  display: flex;
+  align-items: center;
+}
+
+.cart-left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.cart-middle {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.cart-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.cart-item-image {
+  max-width: 70vmin; /* Set the maximum width of the image to the container size */
+  max-height: 20vmin; 
+  object-fit: contain;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  margin-right: 20px;
+}
+
+.cart-item-no {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 5px;
+  margin-top: -10px;
+}
+
+.cart-item-price {
+  margin: 5px; /* Remove margin for price and description */
+  text-align: left;
+  font-family: "Font Name for Price";
+  font-size: 22px; /* Adjust the font size as needed */
+  font-weight: bold;
+}
+
+.cart-item-description {
+  margin: 20px; /* Remove margin for price and description */
+  text-align: left;
+  font-family: "Font Name for Description";
+  font-size: 16px; /* Adjust the font size as needed */
+}
+
+.cart-mcqBox {
+  display: inline-block;
+  font-family: "Font Name for Price";
+  border: 2px solid green; 
+  border-top: none; 
+  border-bottom: none; 
+  padding: 1px;
+  border-radius: 40px; 
+  margin-left: 10px;
+  color: green;
+  font-weight: bold;
+}
+
+.cart-mcqHeading {
+  display: inline-block;
+  margin-left: 10px;
+  color: green;
+  font-weight: bold;
+  font-size: 18px; 
+}
+
+.cart-mcqNum {
+  display: inline-block;
+  margin-left: 10px;
+  color: green;
+  font-weight: bold;
+  font-size: 22px;
+  margin-right: 8px; 
+}
+
+.cart-divider {
+  margin: 0 5px; /* Adjust the value as per your preference */
+  font-size: 25px; /* Adjust the font size as needed */
+  font-weight: bold;
+}
+
+.cart-quantity-container {
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.cart-quantity-btn {
+  background-color: #516ad8;
+  color: white;
+  font-size: 30px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0 20px;
+}
+
+.cart-quantity-text {
+  font-size: 30px;
+  font-weight: bold;
+  color: red;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+.cart-modal-cancel {
+  align-self: center; /* Center the close button */
+  margin-top: 14px; /* Add some spacing between the list and the button */
+  padding: 5px;
+  background-color: '#2953a5';
+  color: black;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  font-size: 14px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.quantity-bubble {
+  padding: 2px;
+  position: absolute;
+  top: 2px;
+  right: 95px;
+  background-color: red;
+  color: white;
+  min-width: 26px;
+  width: max-content;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 1); /* Add a subtle shadow */
+  transform: translateX(50%) scale(1);
+  transform-origin: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.quantity-bubble.expanded {
+  transform: translateX(-50%) scale(1.5);
+}
+
+.export-button {
+  height: 40px;
+  width: 50px;
+  vertical-align: auto;
+  padding: 8px 8px;
+  background-color: #2953a5;
+  border-radius: 5px;
+  color: white;
+  font-size: 10px;
+  cursor: pointer;
+  margin-right: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+}
+
+.customer-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+  z-index: 1000; /* Adjust the z-index as needed */
+}
+
+.customer-modal-send {
+  padding: 10px;
+  background-color: blue;
+  color: white;
+  border-radius: 5px;
+  margin: 10px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.customer-modal-cancel {
+  padding: 10px;
+  background-color: '#2953a5';
+  color: black;
+  border-radius: 5px;
+  margin: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.item-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.item {
+  max-width: 250px;
+  background-color: #2953a54f;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  font-family: "Courier";
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 5px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+}
+
+.item-image {
+  max-width: 100%; /* Set the maximum width of the image to the container size */
+  max-height: 300px; 
+  object-fit: contain;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.item-no {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.price-container {
+  display: flex;
+  align-items: center; /* This will vertically align the elements */
+}
+
+.item-price {
+  margin: 0; /* Remove margin for price and description */
+  text-align: left;
+  font-family: "Font Name for Price";
+  font-size: 25px; /* Adjust the font size as needed */
+  font-weight: bold;
+}
+
+.mcqBox {
+  display: inline-block;
+  font-family: "Font Name for Price";
+  border: 2px solid green; 
+  border-top: none; 
+  border-bottom: none; 
+  padding: 1px;
+  border-radius: 40px; 
+  margin-left: 10px;
+  color: green;
+  font-weight: bold;
+}
+
+.mcqHeading {
+  display: inline-block;
+  margin-left: 10px;
+  color: green;
+  font-weight: bold;
+  font-size: 19px; 
+}
+
+.mcqNum {
+  display: inline-block;
+  margin-left: 10px;
+  color: green;
+  font-weight: bold;
+  font-size: 27px; 
+}
+
+.divider {
+  margin: 0 5px; /* Adjust the value as per your preference */
+  font-size: 25px; /* Adjust the font size as needed */
+  font-weight: bold;
+}
+
+.item-description {
+  margin: 5px; /* Remove margin for price and description */
+  text-align: left;
+  font-family: "Font Name for Description";
+  font-size: 16px; /* Adjust the font size as needed */
+}
+
+.quantity-container {
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.quantity-btn {
+  background-color: #516ad8;
+  color: white;
+  font-size: 30px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0 20px;
+}
+
+.quantity-text {
+  font-size: 30px;
+  font-weight: bold;
+  color: red;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+input {
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  backdrop-filter: blur(5px); /* Apply a blur effect */
+  z-index: 999; /* Place the overlay below the modal */
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.input-container label {
+  align-self: flex-start;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.input-container input {
+  width: 95%; /* Expand the input box to the width of the container */
+}
+
+.required {
+  color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Screen Handling*/
+/* Mobile Version */
+@media (max-width: 715px) {
+  .App-header {
+    justify-content: flex-start; /* Align items to the start (left) */
+    flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+  }
+  .hamburger-button {
+    margin-right: 11px;
+    width: 40px;
+    height: 40px;
+  }
+  .hamburger-icon {
+    font-size: 24px;
+  }
+  .category-list {
+    top: 55px;
+  }
+  .category-list li {
+    font-size: 12px;
+    padding: 12px 0;
+  }
+  .search-button {
+    margin-left: 0px;
+    width: 28px;
+    height: 28px;
+  }
+  .search-icon {
+    font-size: 16px;
+  }
+  .search-bar-pos{
+    position: absolute;
+    top: 58px;
+    left: 61px;
+  }
+  .search-bar {
+    max-height: 10vmin;
+  }
+  .submit-search {
+    margin-top: 4px;
+    margin-left: 1vmin;
+    width: 28px;
+    height: 28px;
+  }
+  .submit-search-icon {
+    font-size: 16px;
+  }
+  .logo-container {
+    width: 100%;
+    text-align: left;
+  }
+  .App-logo {
+    display: none;
+  }
+  .small-logo {
+    margin-left: 7px;
+    height: 8vmin;
+    display: flex;
+    vertical-align: center;
+  }
+  .total-price {
+    top: 8px;
+    right: 125px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .reset-button {
+    top: 24px;
+    right: 120px;
+    margin: 5px;
+    font-size: 10px;
+    font-weight: bold;
+  }
+  .reset-modal {
+    width: 250px;
+  }
+  .cart-button {
+    height: 40px;
+    width: 45px;
+    padding: 8px 8px;
+    font-size: 10px;
+    margin-right: 18px;
+  }
+  .cart-modal {
+    padding: 1px;
+    width: 93vmin;
+    min-height: 160vmin;
+  }
+  .cart-title{
+    display: none;
+  }
+  .cart-instructions{
+    display: none;
+  }
+  .mobile-cart-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: -5px;
+    position: absolute;
+    top: 5px;
+    left: 29vmin;
+    display: block;
+  }
+  .mobile-cart-instructions {
+    font-size: 18px;
+    color: red;
+    margin-top: 5px;
+    position: absolute;
+    top: 40px;
+    left: 10vmin;
+    display: block;
+  }
+  .cart-total-price {
+    margin-top: -1px;
+    top: 25px;
+    right: 2px;
+  }
+  .cart-list {
+    overflow-x: hidden;
+    padding: 0 0px;
+    margin-top: 40px;
+  }
+  .cart-item {
+    margin: 3px;
+    margin-bottom: 10px;
+  }
+  .cart-item-image { 
+    margin-right: 5px;
+  }
+  .cart-item-no {
+    font-size: 14px;
+    margin: 1px;
+    margin-top: -10px;
+  }
+  .cart-item-price {
+    margin: 1px;
+    font-size: 14px; 
+  }
+  .cart-item-description {
+    margin: 2px; 
+    font-size: 12px; 
+  }
+  .cart-mcqBox { 
+    margin-left: 5px;
+  }
+  .cart-mcqHeading {
+    font-size: 12px; 
+  }
+  .cart-mcqNum {
+    font-size: 12px;
+    margin-right: 8px; 
+  }
+  .cart-divider {
+    margin: 0 0px;
+    font-size: 22px;
+  }
+  .cart-quantity-btn {
+    font-size: 10px;
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+  }
+  .cart-quantity-text {
+    font-size: 20px;
+  }
+  .cart-modal-cancel {
+    margin-top: 10px;
+  }
+  .export-button {
+    height: 30px;
+    width: 35px;
+    padding: 6px 8px;
+    font-size: 8px;
+    margin-right: 4px;
+  }
+  .quantity-bubble {
+    padding: 5px;
+    top: 3px;
+    right: 68px;
+    min-width: 12px;
+    height: 10px;
+    font-size: 10px;
+    font-weight: bold;
+  }
+  .customer-modal {
+    top: 350px;
+    width: 250px;
+    position: fixed;
+  }
+  .input-container {
+    margin-bottom: 25px;
+  }
+  .input-container label {
+    font-size: 15px;
+  }
+  
+  .input-container input {
+    height: 14px;
+    width: 90.5%;
+  }
+  .item-list {
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+  }
+  .item {
+    width: 150px;
+    padding: 12px;
+  }
+  .item-no {
+    font-size: 16px;
+  }
+  .item-price {
+    font-size: 16px;
+  }
+  .mcqBox {
+    margin-left: 8px;
+  }
+  .mcqHeading {
+    margin-left: 1px;
+    font-size: 12px; 
+  }
+  .mcqNum {
+    margin-left: 1px;
+    font-size: 12px; 
+  }
+  .divider {
+    margin: 0 1px; /* Adjust the value as per your preference */
+    font-size: 18px; /* Adjust the font size as needed */
+    font-weight: bold;
+  }
+  .item-description {
+    margin: 5px;
+    font-size: 12px; /* Adjust the font size as needed */
+  }
+  .quantity-btn {
+    font-size: 13px;
+    width: 35px;
+    height: 35px;
+    margin: 0 20px;
+  }
+  .quantity-text {
+    font-size: 25px;
+  }
+  .small-input {
+    width: 100px; /* Adjust the width as needed */
+    height: 20px; /* Adjust the height as needed */
+    font-size: 16px;
+  }
+}
+/* Mobile Version end */
+
+@media (min-width: 650px) {
+  .item-list {
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+  }
+}
+
+@media (min-width: 950px) {
+  .item-list {
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+  }
+}
+
+@media (min-width: 1250px) {
+  .item-list {
+    grid-template-columns: repeat(4, minmax(300px, 1fr));
+  }
+}
+
+@media (min-width: 1570px) {
+  .item-list {
+    grid-template-columns: repeat(5, minmax(300px, 1fr));
+  }
+}
+
+@media (min-width: 1850px) {
+  .item-list {
+    grid-template-columns: repeat(6, minmax(300px, 1fr));
+  }
+}
